@@ -6,9 +6,9 @@ app.get('/', function(request, response) {
     fs = require('fs');
     fs.readFile("index.html");
 
-    web_server.use(".", fs);
+    test = "Hello World9!";
 
-    response.send('Hello World8!');
+    response.send(test);
 });
 
 
