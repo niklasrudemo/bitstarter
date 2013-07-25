@@ -4,7 +4,8 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
     fs = require('fs');
-    response.send('Hello World5!');
+    fs.readFile("index.html");
+    response.send('Hello World6!');
 });
 
 
