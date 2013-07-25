@@ -7,9 +7,8 @@ app.get('/', function(request, response) {
 //    var FILE_DEFAULT = "index.html";
 //    file = file || FILE_DEFAULT;
     var buffer = new Buffer(fs.readFileSync("index.html"));
-    sometext = '<h1>Hello world3!<h1>';
     app.get('/',function(request, response) {
-	response.send(sometext);
+	response.send(buffer.toString());
 });
 
 //    var buffer = fs.readFileSync("index.html");
