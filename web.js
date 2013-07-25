@@ -3,6 +3,7 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
+    fs = require('fs');
     response.send('Hello World5!');
 });
 
