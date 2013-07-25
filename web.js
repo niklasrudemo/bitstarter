@@ -4,9 +4,9 @@ var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
     var fs = require('fs');
-    var FILE_DEFAULT = "index.html";
-    file = file || FILE_DEFAULT;
-    var buffer = new Buffer(fs.readFileSync(file));
+//    var FILE_DEFAULT = "index.html";
+//    file = file || FILE_DEFAULT;
+    var buffer = new Buffer(fs.readFileSync("index.html"));
     sometext = '<h1>Hello world3!<h1>';
     app.get('/',function(request, response) {
 	response.send(sometext);
