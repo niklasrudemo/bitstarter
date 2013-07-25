@@ -5,7 +5,15 @@ var app = express.createServer(express.logger());
 app.get('/', function(request, response) {
     fs = require('fs');
     fs.readFile("index.html");
-    response.send('Hello World6!');
+
+fs.readFile('/etc/hosts', 'utf8', function (err,data) {
+  if (err) {
+    return console.log(err);
+  }
+  console.log(data);
+});
+
+    response.send('Hello World7!');
 });
 
 
