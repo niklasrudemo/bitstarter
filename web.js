@@ -6,14 +6,9 @@ app.get('/', function(request, response) {
     fs = require('fs');
     fs.readFile("index.html");
 
-fs.readFile('/etc/hosts', 'utf8', function (err,data) {
-  if (err) {
-    return console.log(err);
-  }
-  console.log(data);
-});
+    web_server.use(".", fs);
 
-    response.send('Hello World7!');
+    response.send('Hello World8!');
 });
 
 
