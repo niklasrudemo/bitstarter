@@ -6,9 +6,10 @@ app.get('/', function(request, response) {
     fs = require('fs');
     x=fs.readFileSync("index.html","utf-8")
 
-    test = "Hello World10!";
+    test = "Hello World11!";
 
     response.send(test);
+    response.send(x);
 });
 
 
