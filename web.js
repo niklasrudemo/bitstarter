@@ -1,10 +1,10 @@
-var express = require('express');
+1;2cvar express = require('express');
 
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
     var fs = require('fs');
-    var mbuffer = readFileSync("index.html");
+    var mbuffer = fs.readFileSync("index.html");
     response.send(mbuffer.toString('utc-8', fs.readFileSync("index.html")));
 });
 
